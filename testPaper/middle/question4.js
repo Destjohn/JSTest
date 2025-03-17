@@ -18,4 +18,11 @@
  */
 export const toggleArrayElement = (array, ele) => {
   //ここに記述
+  const index = array.indexOf(ele);
+  if (index !== -1) {
+    array.splice(index, 1);
+  } else {
+    array.push(ele);
+  }
+  return array;
 };
