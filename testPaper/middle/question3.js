@@ -15,4 +15,7 @@
  */
 export const sumAndAverage = (array) => {
   //ここに記述
+  const sum = array.reduce((acc, num) => acc + num, 0);
+  const average = Math.round((sum / array.length) * 10) / 10;
+  return { sum, average };
 };
